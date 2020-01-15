@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Your mission - replicate the visual styles in the jpeg provided using CSS advanced selectors and the HTML document provide. You CANNOT use simple type selectors, classes or Ids! */ 
+
+body
+{
+	background-color: #F49E1E;
+	font-family: Cute font;
+	margin-right: 25px;
+	margin-left: 15px;
+}
+
+/*direct child combinator*/
+p>strong
+{
+	font-size: 32px;
+	font-weight: 600;
+}
+
+/*direct child combinator*/
+p>em
+{
+	color: green;
+	font-size: 28px;
+	line-height: 28px;
+}
+
+/*direct sibling*/
+body+p
+{
+	text-align: left;
+}
+
+h3
+{
+	padding-bottom: 20px;
+}
+
+/*general sibling*/
+h3~p
+{
+	color: purple;
+}
+
+/*direct sibling*/
+h3+p
+{
+	color:#000000;
+}
+
+/*odd elements selected for styling*/
+ul li:nth-child(odd)
+{
+	color: black;
+	text-decoration: underline
+}
+
+/*even elements selected for styling*/
+ul li:nth-child(even)
+{
+	font-size: 24px;
+}
+
+/* particular element selected for styling*/
+ul li:nth-child(2)
+{
+	color: #00830E;
+}
+
+/* particular element selected for styling*/
+ul li:nth-child(4)
+{
+	color:yellow;
+}
+
+/* descendent combinator*/
+footer p
+{
+	color: ghostwhite;
+}
